@@ -1,0 +1,4 @@
+datlechin-copy-links:
+  forum:
+      copy_link_button: Kopiraj vezu
+      link_copied_message: Veza je kopirana u međuspremnik!
