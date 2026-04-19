@@ -1,0 +1,35 @@
+// Bosanski (BS)
+
+dayjs.locale({
+  name: 'bs',
+  weekdays: 'nedjelja_ponedjeljak_utorak_srijeda_četvrtak_petak_subota'.split('_'),
+  weekdaysShort: 'ned_pon_uto_sri_čet_pet_sub'.split('_'),
+  weekdaysMin: 'ne_po_ut_sr_če_pe_su'.split('_'),
+  months: 'januar_februar_mart_april_maj_jun_jul_august_septembar_oktobar_novembar_decembar'.split('_'),
+  monthsShort: 'jan_feb_mar_apr_maj_jun_jul_aug_sep_okt_nov_dec'.split('_'),
+  weekStart: 1,
+  formats: {
+    LT: 'HH:mm',
+    LTS: 'HH:mm:ss',
+    L: 'DD.MM.YYYY',
+    LL: 'D. MMMM YYYY.',
+    LLL: 'D. MMMM YYYY. HH:mm',
+    LLLL: 'dddd, D. MMMM YYYY. HH:mm',
+  },
+  relativeTime: {
+    future: 'za %s',
+    past: 'prije %s',
+    s: 'nekoliko sekundi',
+    m: 'minutu',
+    mm: '%d minuta',
+    h: 'sat',
+    hh: '%d sati',
+    d: 'dan',
+    dd: '%d dana',
+    M: 'mjesec',
+    MM: '%d mjeseci',
+    y: 'godinu',
+    yy: '%d godina',
+  },
+  ordinal: n => `${n}.`,
+});
