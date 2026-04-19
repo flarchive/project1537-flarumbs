@@ -1,0 +1,24 @@
+fof-socialprofile:
+  admin:
+    permissions:
+      view: Pregled društvenog profila
+      editOwn: Uređivanje vlastitog društvenog profila
+      editAny: Uređivanje bilo kojeg društvenog profila
+
+    settings:
+      allow_external_favicons_label: "Dozvoli ikonice vanjskih web stranica (koristi favicon API vanjskog pružatelja)"
+      favicon_provider_label: Vanjski pružatelj favicona
+
+  forum:
+    edit:
+      edit: Uredi dugmad društvenih mreža
+      add: Dodaj dugmad društvenih mreža
+      headtitle: Uredi dugmad
+      title: Naziv
+      url: URL
+      submit: Spremi
+      delete: Obriši
+      deletetitle: Obriši dugme
+      save_disabled_fetching_favicons: Jedna ili više ikonice se dohvaćaju. Molimo pričekajte.
+      favicon: Favicon
+      grey_favicon: Sivi favicon
