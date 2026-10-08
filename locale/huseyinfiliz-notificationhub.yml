@@ -1,0 +1,81 @@
+huseyinfiliz-notificationhub:
+  admin:
+    title:
+      page_title: "Vrste obavještenja"
+
+    permissions:
+      send_all: "Slanje obavještenja svim korisnicima"
+      send_user: "Slanje obavještenja pojedinačnim korisnicima"
+
+    recipient_kinds:
+      user: => huseyinfiliz-notificationhub.forum.recipient_kinds.user
+      group: => huseyinfiliz-notificationhub.forum.recipient_kinds.group
+
+    modal_notification:
+      recipients_placeholder: => huseyinfiliz-notificationhub.forum.modal_notification.recipients_placeholder
+
+    settings:
+      add_button: "Dodaj vrstu obavještenja"
+      no_data: "Još nema vrsta obavještenja."
+      delete_confirm: "Jeste li sigurni da želite obrisati ovu vrstu obavještenja i sva obavještenja povezana s njom?"
+      fields:
+        actions: "Radnje"
+        name: "Naziv vrste obavještenja"
+        excerpt_key: "Podrazumijevani sažetak"
+        description: "Opis vrste obavještenja"
+        icon: "Podrazumijevana ikona"
+        default_message_key: "Podrazumijevana poruka"
+        permission: "Dozvola za vrstu obavještenja"
+        color: "Boja vrste obavještenja"
+        default_url: "Podrazumijevani link"
+        default_recipients: "Podrazumijevani primaoci"
+        sort_order: "Redoslijed"
+        active: "Aktivno"
+        color_invalid: "Boja mora biti ispravan heksadecimalni kod, npr. #ff0000 ili #f00."
+        preview: "Pregled"
+        preview_placeholder: "Naziv vrste obavještenja"
+        permission_help: "Odaberite grupe članova ovlaštene da šalju ovo obavještenje. Ako ostavite prazno, mogu ga slati svi moderatori i administratori koji imaju dozvolu slanja."
+        permission_placeholder: "Upišite naziv grupe..."
+      save: "Sačuvaj"
+      edit_notification_type: "Uredi vrstu obavještenja"
+      add_notification_type: "Dodaj vrstu obavještenja"
+
+  forum:
+    links:
+      notification_individual: "Pošalji obavještenje"
+      notification_all: "Pošalji obavještenje"
+
+    modal_notification:
+      title_text: "Slanje obavještenja"
+      recipients_label: "Primaoci"
+      recipients_placeholder: "Upišite korisničko ime ili naziv grupe..."
+      message_label: "Poruka"
+      url_label: "Ciljni link"
+      url_placeholder: "https://www.example.com"
+      submit_button: "Pošalji obavještenje"
+      notification_sent_message: "Obavještenja su poslana. Broj primalaca: {recipientsCount}."
+      notification_type_label: "Vrsta obavještenja"
+      no_notification_types: "Nema aktivnih vrsta obavještenja."
+      preview_title: "Pregled obavještenja"
+      preview_message_placeholder: "Tekst obavještenja..."
+      preview_all_members: "Svi članovi"
+
+    recipient_kinds:
+      user: "Korisnik"
+      group: "Grupa"
+
+  api:
+    message_required: "Poruka je obavezna."
+    user_ids_required: "ID-ovi korisnika su obavezni."
+    subject_id_required: "Vrsta obavještenja je obavezna."
+    no_valid_recipients: "Nije pronađen nijedan ispravan primalac."
+    name_required: "Naziv vrste obavještenja je obavezan."
+    invalid_url: "Otkriven je neispravan protokol URL-a."
+    name_too_long: "Naziv ne smije imati više od 255 znakova."
+    message_too_long: "Poruka ne smije imati više od 5000 znakova."
+    url_too_long: "URL ne smije imati više od 2048 znakova."
+    invalid_url_scheme: "Neispravna shema URL-a. Dozvoljeni su samo HTTP, HTTPS, mailto, tel ili relativni linkovi."
+    sort_order_invalid: "Redoslijed mora biti broj koji nije negativan."
+    field_too_long: "Ovo polje je predugo."
+    invalid_color: "Boja mora biti ispravan heksadecimalni kod (npr. #ff0000 ili #f00)."
+    multiple_recipients_not_allowed: "Nemate dozvolu da istovremeno šaljete obavještenje većem broju primalaca."

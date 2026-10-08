@@ -1,0 +1,36 @@
+flarum-realtime:
+    forum:
+        push:
+            discussion-list-new-activity: "{count, plural, one {Prikaži # ažuriranu diskusiju} other {Prikaži # ažuriranih diskusija}}"
+            discussion-list-new-activity-with-auto-release: "{count, plural, one {# diskusija ima} other {# diskusija ima}} ažuriranu aktivnost i bit će prikazana za {releaseTimeout} sekundi. Kliknite da prikažete odmah."
+        typing-indicator:
+            anonymous-user: "[Skriveno]"
+            hidden-user: "{username} (skriveno)"
+            people-are-typing: "{number, plural, one {# osoba kuca} other {# osoba kuca}}"
+            users-are-typing: "{count, plural, one {{users} kuca} other {{users}{others, plural, =1 { i još # osobu} =0 {} other { i još # osoba}} kucaju}}"
+            no-activity: Niko ne kuca
+        index-typing:
+            someone-typing: Neko kuca u ovoj diskusiji
+            someone-typing-tag: Neko kuca u ovoj oznaci
+        user:
+            settings:
+                heading: Ažuriranja uživo
+                typing-indicator-type:
+                    help: Kada je omogućeno, indikator kucanja će prikazivati korisnike koji trenutno kucaju. Onemogućite ovo da se prikazuje samo broj korisnika koji trenutno kucaju.
+                    label: Prikaži ko kuca
+    admin:
+        permission:
+            view-who-types: Pregled ko kuca
+        settings:
+            release-discussion-updates: Ažuriranja liste diskusija
+            release-discussion-updates-help: Kada je omogućeno, nove diskusije će biti gurnute u <code>DiscussionList</code> u definisanom intervalu ispod.
+            release-discussion-updates-interval: Interval za automatsko guranje nove aktivnosti diskusija
+            release-discussion-updates-interval-help: U sekundama. 0 znači bez automatskog guranja.
+            notification-toast-dismiss-after: Trajanje iskačućeg obavještenja
+            notification-toast-dismiss-after-help: Koliko dugo (u sekundama) iskačuće obavještenje uživo ostaje na ekranu prije nego što se automatski ukloni. Postavite na 0 da onemogućite iskačuća obavještenja.
+            typing-indicator: Indikator kucanja
+            typing-indicator-help: Kada je omogućeno, u skladu sa dozvolom, korisnici mogu vidjeti broj drugih korisnika koji trenutno kucaju u diskusiji. Kada je onemogućeno, aktivnost kucanja se uklanja i iz korisničkog sučelja i iz websocket podataka.
+            index-typing-indicator: Tačkice kucanja na listi diskusija
+            index-typing-indicator-help: Kada je omogućeno, diskretna ikona se pojavljuje na listi diskusija za svaku javno vidljivu diskusiju u kojoj neko trenutno kuca. Imena se ne prikazuju.
+            index-typing-indicator-restricted: Tačkice kucanja na listi diskusija u ograničenim oznakama
+            index-typing-indicator-restricted-help: Također prikaži tačkice kucanja za diskusije u ograničenim oznakama, korisnicima koji mogu vidjeti te oznake. Zahtijeva ekstenziju Tags. Zadano isključeno.

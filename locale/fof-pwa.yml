@@ -1,0 +1,129 @@
+fof-pwa:
+  admin:
+    nav:
+      pwa_button: "Progresivna web aplikacija"
+      pwa_text: "Podesite platformu da radi kao progresivna web aplikacija (PWA) koja se može instalirati na mobilne uređaje."
+    pwa:
+      about:
+        description_label: "Opis"
+        description_text: "Opis se podešava na stranici „Osnovno“ u administratorskom panelu."
+        long_name_label: "Puni naziv"
+        long_name_text: "Naziv web aplikacije koji se prikazuje korisniku."
+        heading: "O aplikaciji"
+        short_name_label: "Kratki naziv"
+        short_name_text: "Naziv aplikacije koji se prikazuje korisniku kada nema dovoljno prostora za puni naziv."
+      colors:
+        heading: "Boje"
+        background_color_label: "Boja pozadine"
+        background_color_text: "Koristi se kao privremena boja početnog ekrana dok se aplikacija učitava. Nakon učitavanja se više ne koristi."
+        theme_color_label: "Boja izgleda (theme color)"
+        theme_color_text: "Uređaji ovu boju ponekad koriste pri prikazu aplikacije, npr. kao boju okvira oko stranice u Androidovom prikazu otvorenih aplikacija."
+      maintenance:
+        heading: "Održavanje"
+        debug_label: "Uključi režim za otklanjanje grešaka"
+        debug_text: "Bilježi informacije o obavještenjima u `storage/logs`. U pravilu treba biti isključeno, da se log datoteke ne bi nepotrebno punile."
+        reset_vapid_button: "Ponovo generiši VAPID ključeve"
+        reset_vapid_text: "Ponovo generiše VAPID ključeve i briše sve postojeće pretplate koje koriste trenutne ključeve."
+        reset_vapid_confirm: "Ponovnim generisanjem VAPID ključeva uklanjaju se sve pretplate koje koriste postojeće ključeve, pa korisnici neće primati obavještenja dok ponovo ne posjete platformu. Ovo radite samo pri prvom podešavanju push obavještenja ili ako push obavještenja uopće ne rade, a iznad je prikazano upozorenje o nedostajućim VAPID ključevima."
+        reset_vapid_success: "VAPID ključevi su uspješno ponovo generisani. Broj poništenih pretplata: {count}. Ponovo učitajte stranicu da vidite ažuriran izvještaj provjere stanja."
+      firebase_config:
+        heading: "Firebase"
+        help_text: "Da bi aplikacija objavljena u Apple App Storeu podržavala push obavještenja, potrebno ih je dodati putem Firebasea. Generišite Firebase konfiguraciju servisa (Service Config) i učitajte je ovdje. <a>Pogledajte dokumentaciju</a>."
+        upload_successful: "Firebase konfiguracija je uspješno učitana."
+        upload_file: "Učitaj datoteku"
+      other:
+        heading: "Ostalo"
+        force_portrait_text: "Uvijek koristi uspravnu orijentaciju ekrana"
+        push_notif_preference_default_to_email_label: "Push postavke preuzimaju podrazumijevane e-mail postavke"
+        push_notif_preference_default_to_email_text: "Ako je uključeno, korisnici će podrazumijevano imati uključena push obavještenja za sve vrste obavještenja za koje su podrazumijevano uključena e-mail obavještenja. Ako je isključeno, push obavještenja su podrazumijevano isključena."
+        window_controls_overlay_label: "Uključi Window Controls Overlay (prekrivanje naslovne trake)"
+        window_controls_overlay_text: |
+          Ako je uključeno, korisnici mogu dobiti doživljaj bliži izvornoj aplikaciji, jer se sakriva sistemska naslovna traka prozora. Da li će se ova opcija zaista primijeniti, zavisi od postavki korisnika i podrške preglednika. Nakon uključivanja naslovnu traku obavezno prilagodite CSS/JS kodom; u suprotnom će kontrole prozora prekriti elemente gornje navigacije platforme, a prozor će se gotovo nemoguće pomjerati, što kvari korisničko iskustvo.
+
+          Pogledajte i: <compatibilitylink>podrška preglednika za Window Controls Overlay</compatibilitylink> i <learnlink>Window Controls Overlay na Microsoft Learnu</learnlink>
+        user_max_subscriptions_label: "Najveći broj push pretplata po korisniku"
+        user_max_subscriptions_text: "Koliko push pretplata korisnik može imati istovremeno? Kada korisnik primi push obavještenje, svaka pretplata znači jedan API poziv. Svaka pretplata obično odgovara jednom pregledniku koji je korisnik koristio."
+        push_notification_ttl_label: "Trajanje push obavještenja (TTL)"
+        push_notification_ttl_text: "Koliko dugo push servis čuva neisporučena push obavještenja u redu čekanja prije nego što isteknu (u sekundama)."
+        share_buttons_label: "Uključi dugmad za dijeljenje"
+        share_buttons_text: "Ako je uključeno, temama, objavama i profilima korisnika dodaje se dugme „Podijeli“."
+
+      heading: "Postavke progresivne web aplikacije"
+      text: "Podesite platformu da radi kao progresivna web aplikacija! Time platforma ne dospijeva automatski u prodavnicu aplikacija, nego korisnici dobijaju opciju „Dodaj na početni ekran“. Ispod je nekoliko automatskih provjera stanja, ali najpouzdaniji test je da aplikaciju sami instalirate (upute za instalaciju progresivnih web aplikacija lako ćete pronaći na internetu). Imajte na umu da ponudu za instalaciju PWA kontroliše preglednik: ne mogu je pokrenuti ni programeri, ni administratori, ni bilo koji program. Razmislite o tome da u uputstva za korištenje platforme uvrstite i upute za instalaciju aplikacije."
+      status_check_heading: "Provjera stanja"
+      logo_heading: "Logo i ikone"
+      logo_text: |
+        Da bi se progresivna web aplikacija mogla instalirati, morate učitati najmanje jedan logo. Svi logoi moraju biti kvadratni; u suprotnom će biti prilagođeni, a moguće i razvučeni.
+
+        Ispod je ponuđeno više veličina. Preporučujemo da logo učitate za što više njih, jer se time podržava više uređaja.
+
+        Jedan veliki logo možete učitati i u polja za manje veličine. Na primjer, logo veličine 1000x1000px možete učitati u SVA polja ispod. Međutim, ako logo veličine 50x50px učitate u polje 512x512, bit će znatno razvučen.
+
+      logo_size_text: "Učitajte logo koji će biti prilagođen na {size} x {size} piksela."
+      submit_button: "Sačuvaj postavke"
+      refreshed_message: "PWA konfiguracija je uspješno osvježena."
+    status:
+      config_no_https: "URL u datoteci config.php ne koristi HTTPS. HTTPS je obavezan za rad progresivnih web aplikacija."
+      possible_https_disabled: "Platforma možda ne radi preko HTTPS-a. Može pomoći čišćenje keš memorije (Kontrolna tabla → Alati). Ako platforma koristi HTTPS, zanemarite ovu poruku; ako ne koristi, imajte na umu da je HTTPS obavezan za rad progresivnih web aplikacija."
+      no_logo: "Da bi se PWA mogla instalirati, morate učitati najmanje jedan logo veličine najmanje 144x144px."
+      no_name: "Da bi aplikacija radila, morate unijeti njen puni naziv."
+      no_vapid_keys: "VAPID ključevi nisu pronađeni. Potrebni su za slanje push obavještenja. Ispod ih možete ponovo generisati."
+      key_gen_failed: "Generisanje ključeva potrebnih za push obavještenja nije uspjelo. Puna poruka o grešci: {error}"
+      suggest_gmp: "PHP ekstenzija gmp izgleda nije uključena na serveru. Nije obavezna, ali poboljšava performanse i preporučuje se. Neki dijeljeni hostinzi je ipak ne podržavaju."
+      success: "Nisu pronađeni mogući problemi!"
+  forum:
+    alerts:
+      optin: "Ova platforma može slati push obavještenja na ovaj uređaj. Želite li ih uključiti?"
+      optin_enable_button: "Uključi"
+      optin_success: "Push obavještenja su uključena na ovom uređaju."
+      optin_declined: "Push obavještenja su blokirana. Kasnije ih možete dozvoliti u postavkama preglednika."
+      optin_deferred: "Push obavještenja nisu uključena. Kasnije ih možete uključiti u postavkama obavještenja."
+    discussion_controls:
+      share_button: "Podijeli"
+    post_controls:
+      share_button: "Podijeli"
+      share_api:
+        title: "Odgovor korisnika {username} u temi „{title}“"
+    user_controls:
+      share_button: "Podijeli"
+    settings:
+      push_header: "Push"
+      pwa_notifications:
+        access_default: "Zbog ograničenja preglednika, prijem push obavještenja na ovom uređaju morate sami odobriti."
+        access_default_button: "Odobri"
+        access_denied: "Da biste primali push obavještenja na ovom uređaju, morate promijeniti postavke preglednika."
+        access_denied_button: "Saznajte kako"
+        no_browser_support: "Ovaj preglednik ne podržava push obavještenja za progresivne web aplikacije."
+        no_browser_support_button: "Saznajte više"
+    notifications_help:
+      browser_notifications_title: "Kako uključiti obavještenja u pregledniku"
+      title: "Uključite push obavještenja"
+      description: "Ako ste ranije blokirali obavještenja, slijedite upute ispod da ih ponovo uključite na svom uređaju."
+
+      chromium_title: "Google Chrome, Microsoft Edge i Android"
+      chromium_instructions: "Kliknite ikonu informacija o stranici (lokot ili ikona podešavanja) pored web adrese u pregledniku. Odaberite „Postavke stranice“ (Site settings) ili „Dozvole“ (Permissions), pronađite „Obavještenja“ (Notifications) i promijenite postavku u „Dozvoli“ (Allow)."
+
+      firefox_title: "Mozilla Firefox"
+      firefox_instructions: "Kliknite ikonu lokota pored web adrese. Ako su „Obavještenja“ (Notifications) označena kao „Blokirano“ (Blocked), kliknite „X“ pored njih da uklonite ograničenje. Osvježite stranicu i dozvolite obavještenja kada preglednik to zatraži."
+
+      safari_mac_title: "Apple Safari (macOS)"
+      safari_mac_instructions: "Otvorite meni Safari na vrhu ekrana i odaberite „Postavke“ (Settings ili Preferences). Kliknite karticu „Web stranice“ (Websites), u lijevom bočnom meniju odaberite „Obavještenja“ (Notifications), pronađite ovu platformu na listi i promijenite postavku u „Dozvoli“ (Allow)."
+
+      safari_ios_title: "Apple iPhone i iPad (iOS/iPadOS)"
+      safari_ios_instructions: "Na iOS-u push obavještenja rade samo ako je aplikacija instalirana. U Safariju dodirnite ikonu „Dijeli“ (Share) i odaberite „Dodaj na početni ekran“ (Add to Home Screen). Zatim otvorite novoinstaliranu aplikaciju. Ako su obavještenja blokirana, otvorite iOS aplikaciju „Postavke“ (Settings), idite na „Obavještenja“ (Notifications), odaberite ovu web aplikaciju s liste i uključite „Dozvoli obavještenja“ (Allow Notifications)."
+
+  api:
+    endpoint_https_required: "Push obavještenja nisu uključena jer je preglednik poslao neispravan URL push servisa „{url}“. Potreban je ispravan HTTPS URL."
+    endpoint_host_not_allowed: "Push obavještenja nisu uključena jer server push servisa „{host}“ koji koristi vaš preglednik nije dozvoljen. Obratite se administratoru platforme."
+
+  views:
+    offline:
+      header: "Nema internetske veze"
+      text: "Ova aplikacija zahtijeva internetsku vezu i ne može se koristiti bez nje. Provjerite vezu."
+
+flarum-gdpr:
+  lib:
+    data:
+      pushsubscriptions:
+        export_description: "Izvozi sve pretplate na push obavještenja i tokene uređaja povezane s korisnikom."
+        delete_description: "Briše sve pretplate na push obavještenja i tokene uređaja povezane s korisnikom."
