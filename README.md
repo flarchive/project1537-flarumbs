@@ -2,13 +2,24 @@
 
 > **Read-only archive of released versions of project1537/flarumbs.** Not for installation: use [Packagist](https://packagist.org/packages/project1537/flarumbs) or the [upstream repository](https://github.com/project1537/flarumbs).
 
-**0** versions archived · Latest: [`v3.2.2`](https://github.com/flarchive/project1537-flarumbs/tree/archive/v3.2.2) · License: `MIT` · Flarum: `^2.0`
+**75** versions archived · Latest: [`v3.2.2`](https://github.com/flarchive/project1537-flarumbs/tree/archive/v3.2.2) · License: `MIT` · Flarum: `^2.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v1.0` | 2023-11-08 | `^1.8` | [Browse](https://github.com/flarchive/project1537-flarumbs/tree/archive/v1.0) |
+| `v1.1` | 2023-11-09 | `^1.8` | [Browse](https://github.com/flarchive/project1537-flarumbs/tree/archive/v1.1) |
+| `v1.2` | 2023-11-11 | `^1.8` | [Browse](https://github.com/flarchive/project1537-flarumbs/tree/archive/v1.2) |
+| `v1.2.1` | 2023-11-12 | `^1.8` | [Browse](https://github.com/flarchive/project1537-flarumbs/tree/archive/v1.2.1) |
+| `v1.3` | 2023-11-19 | `^1.8` | [Browse](https://github.com/flarchive/project1537-flarumbs/tree/archive/v1.3) |
+| `v1.3.1` | 2023-11-24 | `^1.8` | [Browse](https://github.com/flarchive/project1537-flarumbs/tree/archive/v1.3.1) |
+| `v1.3.2` | 2023-11-26 | `^1.8` | [Browse](https://github.com/flarchive/project1537-flarumbs/tree/archive/v1.3.2) |
+| `v1.3.3` | 2023-11-28 | `^1.8` | [Browse](https://github.com/flarchive/project1537-flarumbs/tree/archive/v1.3.3) |
+| `v1.3.4` | 2023-11-28 | `^1.8` | [Browse](https://github.com/flarchive/project1537-flarumbs/tree/archive/v1.3.4) |
+| `v1.3.5` | 2023-11-28 | `^1.8` | [Browse](https://github.com/flarchive/project1537-flarumbs/tree/archive/v1.3.5) |
+
+[View all 75 versions](https://github.com/flarchive/project1537-flarumbs/tags)
 
 Catalog entry: [packages/project1537-flarumbs.json](https://github.com/flarchive/archive-index/blob/main/packages/project1537-flarumbs.json)
 
