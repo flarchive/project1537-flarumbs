@@ -1,0 +1,80 @@
+fof-subscribed:
+    forum:
+        settings:
+            defaults_label: "Neka „{setting}“ bude podrazumijevano uključeno"
+            forced_label: "Obavezno uključi „{setting}“ za sve"
+            notify_discussion_created_label: "Neko pokrene temu"
+            notify_post_created_label: "Neko napiše novu objavu ili odgovor"
+            notify_post_unapproved_label: "Nova objava čeka odobrenje"
+            notify_user_created_label: "Pridruži se novi član"
+            notify_post_flagged_label: "Neko prijavi objavu"
+        notifications:
+            discussion_created_text: "{username} – nova tema"
+            post_created_text: "{username} – nova objava"
+            post_unapproved_text: "{username} – objava čeka odobrenje"
+            user_created_text: "{username} – novi član"
+            post_flagged_text: "{username} – prijavljena objava"
+    admin:
+        permission:
+            subscribe_to_discussion_created: "Primanje obavještenja o novim temama"
+            subscribe_to_post_created: "Primanje obavještenja o novim objavama i odgovorima"
+            subscribe_to_post_unapproved: "Primanje obavještenja o objavama koje čekaju odobrenje"
+            subscribe_to_user_created: "Primanje obavještenja o novim članovima"
+            subscribe_to_post_flagged: "Primanje obavještenja o prijavljenim objavama"
+    email:
+        subject:
+            newDiscussion: "[Pretplata | Nova tema] {title}"
+            newUser: "[Pretplata | Novi član] {username}"
+            postUnapproved: "[Pretplata | Čeka odobrenje] {username} – objava u temi {title}"
+            postCreated: "[Pretplata | Nova objava] {username} – objava u temi {title}"
+            postFlagged: "[Pretplata | Prijava] {username} – prijavljena objava u temi {title}"
+        body:
+            newDiscussion: |
+                Zdravo, {recipient_display_name},
+
+                nova tema korisnika {actor_display_name}: {discussion_title}
+
+                Temu možete pogledati na sljedećem linku:
+                {discussion_url}
+
+                ---
+
+                {post_content}
+            newUser: |
+                Zdravo, {recipient_display_name},
+
+                novi član platforme {forum_url}: {actor_display_name}.
+
+                Profil novog člana možete pogledati na sljedećem linku:
+                {user_url}
+            postUnapproved: |
+                Zdravo, {recipient_display_name},
+
+                nova objava korisnika {actor_display_name} u temi {discussion_title} nije automatski odobrena.
+
+                Objavu možete pogledati na sljedećem linku:
+                {post_url}
+
+                ---
+
+                {post_content}
+
+            postCreated: |
+                Zdravo, {recipient_display_name},
+
+                nova objava korisnika {actor_display_name} u temi {discussion_title}.
+
+                Objavu možete pogledati na sljedećem linku:
+                {post_url}
+
+                ---
+
+                {post_content}
+
+            postFlagged: |
+                Zdravo, {recipient_display_name},
+
+                prijavljena je objava u temi {discussion_title} (prijava: {actor_display_name}).
+
+                Objavu možete pogledati na sljedećem linku:
+                {post_url}

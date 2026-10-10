@@ -1,0 +1,5 @@
+fof-usercard-stats:
+  forum:
+    user:
+      discussion-count: "{count, plural, one {# tema} few {# teme} other {# tema}}"
+      post-count: "{count, plural, one {# objava} few {# objave} other {# objava}}"

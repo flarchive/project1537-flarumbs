@@ -1,0 +1,66 @@
+fof-merge-discussions:
+  forum:
+    modal:
+      title: "Spajanje tema"
+      search_discussions_placeholder: "Pretraži teme..."
+
+      ordering_heading: "Redoslijed nakon spajanja"
+      ordering_date_label: "Poredaj objave po datumu nastanka"
+      ordering_date_help: "Objave u spojenoj temi poredaju se prema datumu kada je svaka od njih napisana"
+      ordering_suffix_label: "Dodaj pripojene objave na kraj teme"
+      ordering_suffix_help: "Objave pripojene temi koja ostaje dodaju se na kraj te teme"
+
+      type_heading: "Vrsta spajanja"
+      type_target_label: "Pripoji druge teme ovoj"
+      type_target_help_text: "Odaberite teme koje će se pripojiti temi „{title}“."
+
+      type_from_label: "Pripoji ovu temu drugoj"
+      type_from_help_text: "Odaberite ciljnu temu kojoj će se pripojiti tema „{title}“."
+
+      load_preview_button: "Pregled"
+      submit_button: => fof-merge-discussions.ref.merge
+
+    notification:
+      discussion_merged: "Vaša tema {oldTitle} pripojena je ovoj temi (spajanje: {username})."
+      preferences:
+        discussion_merged: "Neko spoji neku od mojih tema s drugom temom"
+
+    discussion:
+      merge: => fof-merge-discussions.ref.merge
+
+    post:
+      merged: "{count, plural, one {Pripojena je # objava iz: {titles}.} few {Pripojene su # objave iz: {titles}.} other {Pripojeno je # objava iz: {titles}.}}"
+
+  admin:
+    permissions:
+      merge_discussions_label: "Spajanje tema"
+    settings:
+      search_result_help: "Koliko tema se prikazuje pri pretrazi u prozoru „Spajanje tema“."
+      search_result_label: "Ograničenje rezultata pretrage pri spajanju"
+
+  api:
+    error:
+      merging_failed: "Spajanje tema nije uspjelo."
+      updating_failed: "Ažuriranje podataka o temi nije uspjelo."
+      deleting_failed: "Brisanje praznih tema nije uspjelo."
+
+  ref:
+    merge: "Spoji"
+
+  email:
+    merged:
+      body: |
+        Vaša tema „{merged_discussion_title}“ pripojena je temi „{discussion_title}“ (spajanje: {actor_display_name}).
+
+        Pogledajte je ovdje: {discussion_url}
+      subject: "Vaša tema „{merged_discussion_title}“ pripojena je drugoj temi"
+
+# Labels for the audit log entries this extension produces, rendered by the (optional)
+# flarum/audit browser. Defined under the flarum-audit namespace so the audit frontend
+# resolves them, but shipped here so they travel with the extension that owns the actions.
+flarum-audit:
+  lib:
+    browser:
+      discussion:
+        merged_away: "Tema {discussion} pripojena je temi {new_discussion}"
+        merged_into: "Spajanje u temu {discussion} – broj objava: {post_count}, broj tema: {original_discussion_ids_count}"
