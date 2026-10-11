@@ -1,0 +1,38 @@
+flarum-realtime:
+    forum:
+        discussion-removed: "Ova tema je uklonjena."
+        push:
+            discussion-list-new-activity: "{count, plural, one {Prikaži # ažuriranu temu} few {Prikaži # ažurirane teme} other {Prikaži # ažuriranih tema}}"
+            discussion-list-new-activity-with-auto-release: "{count, plural, one {# tema ima novu aktivnost i bit će prikazana} few {# teme imaju novu aktivnost i bit će prikazane} other {# tema ima novu aktivnost i bit će prikazano}} za {releaseTimeout} s. Kliknite da se prikažu odmah."
+        typing-indicator:
+            anonymous-user: "[Skriveno]"
+            hidden-user: "{username} (skriveno)"
+            people-are-typing: "{number, plural, one {# osoba piše} few {# osobe pišu} other {# osoba piše}}"
+            users-are-typing: "{count, plural, one {{users} piše} other {{users}{others, plural, =1 { te još # osoba} =0 {} one { te još # osoba} few { te još # osobe} other { te još # osoba}} pišu}}"
+            no-activity: "Niko ne piše"
+        index-typing:
+            someone-typing: "Neko piše u ovoj temi"
+            someone-typing-tag: "Neko piše u temi s ovom oznakom"
+        user:
+            settings:
+                heading: "Rad uživo"
+                typing-indicator-type:
+                    help: "Kada je uključeno, indikator pisanja prikazuje korisnike koji trenutno pišu. Isključite da se prikazuje samo njihov broj."
+                    label: "Prikaži ko piše"
+    admin:
+        permission:
+            view-all-typing: "Uvid u to ko piše bilo gdje na platformi"
+            view-who-types: "Uvid u to ko piše"
+        settings:
+            release-discussion-updates: "Ažuriranja liste tema"
+            release-discussion-updates-help: "Kada je uključeno, nove teme se u listu tema (<code>DiscussionList</code>) dodaju u intervalu određenom ispod."
+            release-discussion-updates-interval: "Interval automatskog dodavanja nove aktivnosti u listu tema"
+            release-discussion-updates-interval-help: "U sekundama. Vrijednost 0 isključuje automatsko dodavanje."
+            notification-toast-dismiss-after: "Trajanje skočnog obavještenja"
+            notification-toast-dismiss-after-help: "Koliko dugo (u sekundama) skočno obavještenje ostaje na ekranu prije nego što se automatski zatvori. Vrijednost 0 isključuje skočna obavještenja."
+            typing-indicator: "Indikator pisanja"
+            typing-indicator-help: "Kada je uključeno, korisnici koji imaju dozvolu vide koliko drugih korisnika trenutno piše u temi. Kada je isključeno, podaci o pisanju uklanjaju se i iz interfejsa i iz podataka koje šalje websocket server."
+            index-typing-indicator: "Tačkice pisanja u listi tema"
+            index-typing-indicator-help: "Kada je uključeno, u listi tema pojavljuje se diskretna ikona uz svaku javno vidljivu temu u kojoj neko trenutno piše. Imena se ne prikazuju."
+            index-typing-indicator-restricted: "Tačkice pisanja u listi tema s ograničenim oznakama"
+            index-typing-indicator-restricted-help: "Tačkice pisanja prikazuju se i za teme s ograničenim oznakama, korisnicima koji te oznake mogu vidjeti. Zahtijeva ekstenziju Tags. Podrazumijevano isključeno."
