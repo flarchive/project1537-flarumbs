@@ -1,0 +1,114 @@
+fof-best-answer:
+  admin:
+    permissions:
+      best_answer: "Odabir najboljeg odgovora (u vlastitoj temi)"
+      best_answer_not_own_discussion: "Odabir najboljeg odgovora (u tuđoj temi)"
+      allow_select_own_post: "Odabir vlastite objave kao najboljeg odgovora"
+    settings:
+      label:
+        tags: "Oznake za najbolje odgovore"
+        general: "Općenito"
+        reminders: "Podsjetnici"
+        reminders_notice: "Podsjetnici traže od autora teme da odabere najbolji odgovor. Šalje ih zadatak koji se pokreće svaki sat, pa Flarumov planer zadataka mora biti podešen."
+      show_max_lines_label: "Najveći broj redova u pregledu objave"
+      show_max_lines_help: "Vrijednost 0 isključuje ograničenje. Ako je objava duža od zadanog broja redova, u pregledu se skraćuje uz efekat postepenog nestajanja."
+      select_best_answer_reminder_days: "Broj dana do podsjetnika"
+      select_best_answer_reminder_days_help: "Koliko dana nakon pokretanja teme autor dobija podsjetnik da odabere najbolji odgovor. Za svaku temu podsjetnik se šalje samo jednom, i to samo ako autor smije odabrati neki od odgovora. Teme pokrenute više od 7 dana prije toga se preskaču. Vrijednost 0 isključuje podsjetnike."
+      select_best_answer_tags_label: "Oznake za teme s najboljim odgovorom"
+      select_best_answer_tags_help: "Odaberite oznake koje se, ako želite, dodaju temama kada se odabere najbolji odgovor. Dozvoljene su samo sekundarne oznake. Ako se najbolji odgovor poništi, te oznake se uklanjaju."
+      schedule_stop_overnight: "Ne šalji podsjetnike noću"
+      schedule_stop_overnight_help: "Podsjetnici se šalju samo između 08:00 i 21:00 UTC."
+      schedule_log_output: "Bilježi izvršavanje podsjetnika"
+      schedule_log_output_help: "Izlaz svakog izvršavanja dodaje se u storage/logs/fof-best-answer.log."
+      show_filter_label: "Prikaži filter najboljeg odgovora"
+      show_filter_help: "Za oznake s uključenim najboljim odgovorima u listi tema prikazuje se filter riješenih i neriješenih pitanja."
+      use_alt_ui: "Alternativni raspored"
+      use_alt_ui_help: "Kontrole najboljeg odgovora u podnožju objave"
+      documentation: "Dokumentacija"
+      enabled_tags_label: "Oznake s uključenim najboljim odgovorima"
+      enabled_tags_help: "Odaberite oznake, ako ih ima, za koje se uključuju najbolji odgovori. Te oznake dobijaju oblik pitanja i odgovora i u njima se može odabrati najbolji odgovor."
+      remind_tags_label: "Oznake za podsjetnike"
+      remind_tags_help: "Podsjetnici se šalju samo za teme s ovim oznakama. Tema mora imati i neku od oznaka s uključenim najboljim odgovorima."
+      tags_info: |
+        Kada su za oznaku uključeni najbolji odgovori, svakoj grupi korisnika koja smije birati odgovore dodijelite dozvole (u vlastitoj temi, u bilo kojoj temi). Dozvole se mogu dodijeliti globalno (za sve oznake s uključenim najboljim odgovorima) ili posebno za svaku oznaku.
+      discussion_sidebar_jump_button: "Prikaži dugme za skok na najbolji odgovor u bočnoj traci teme"
+      discussion_sidebar_jump_button_help: "Dodaje dugme u bočnu traku teme kojim se skače na najbolji odgovor u toku objava."
+  forum:
+    answered_badge: "Odgovoreno"
+    this_best_answer: "Odaberi kao najbolji odgovor"
+    remove_best_answer: "Poništi najbolji odgovor"
+    best_answer_button: "Najbolji odgovor"
+    best_answer_label: "odabir: <a>{username}</a> {time_set}"
+    errors:
+      mismatch: "Odabrana objava ne postoji u ovoj temi."
+
+    notification:
+      best_answer_in_discussion: "{username} – odabran je najbolji odgovor u ovoj temi"
+      content: "Odaberite najbolji odgovor ako ste dobili odgovor na svoje pitanje"
+      awarded: "Vaša objava je odabrana kao najbolji odgovor (odabir: {username})"
+
+      preferences:
+        awarded_best_answer: "Neko odabere moju objavu kao najbolji odgovor"
+        best_answer_in_discussion: "Odabran je najbolji odgovor u temi u kojoj učestvujem"
+        select_best_answer: "Automatski podsjetnik da odaberem najbolji odgovor u svojoj temi"
+
+    index:
+      ask_question: "Postavi pitanje"
+      cannot_ask_question: "Postavljanje pitanja nije moguće"
+    deck:
+      best_answers: "Najbolji odgovori"
+      unsolved_questions: "Neriješena pitanja"
+    filter:
+      all_label: "Sva pitanja"
+      solved_label: "Riješena pitanja"
+      unsolved_label: "Neriješena pitanja"
+      accessible_label: "Odabir riješenih/neriješenih pitanja"
+    composer:
+      titlePlaceholder: "Naslov pitanja"
+    user:
+      best-answer-count: "{count, plural, one {# najbolji odgovor} few {# najbolja odgovora} other {# najboljih odgovora}}"
+    discussion:
+      jump_to_best_answer_button: "Pogledaj najbolji odgovor"
+  email:
+    subject:
+      awarded: "Vaša objava je odabrana kao najbolji odgovor ({display_name})"
+      ba-set: "Odabran je najbolji odgovor ({display_name})"
+      select: "Jeste li dobili odgovor na svoje pitanje?"
+    body:
+      awarded: |
+        Odlično! Vaša objava u temi {discussion_title} odabrana je kao najbolji odgovor (odabir: {actor_display_name}). Hvala što pomažete drugima.
+
+        Pogledajte je ovdje: {discussion_url}
+      ba-set: |
+        U temi {discussion_title}, u kojoj ste učestvovali, odabran je najbolji odgovor (odabir: {actor_display_name}).
+
+        Pogledajte ga ovdje: {discussion_url}
+      select: |
+        Samo da provjerimo: na Vaše pitanje {discussion_title} do sada je vjerovatno stiglo više odgovora. Nadamo se da Vam je neki od njih pomogao.
+
+        Ako jeste, bilo bi korisno da odaberete najbolji odgovor. Tako će drugi koji imaju isto pitanje lakše pronaći rješenje, a to je ujedno i zahvala onima koji su Vam pomogli svojim vremenom i trudom.
+
+        Temu možete otvoriti ovdje: {discussion_url} i odabrati objavu koja najbolje odgovara na pitanje.
+
+        Hvala!
+  lib:
+    gambits:
+      solved-discussions:
+        key: rijeseno
+      qna:
+        key: pitanje
+      solution:
+        key: rjesenje
+
+fof-user-directory:
+  lib:
+    sort:
+      most_best_answers: "Najviše najboljih odgovora"
+      least_best_answers: "Najmanje najboljih odgovora"
+
+flarum-audit:
+  lib:
+    browser:
+      discussion:
+        best_answer_set: "Objava {post} odabrana je kao najbolji odgovor u temi {discussion}"
+        best_answer_unset: "Poništen je najbolji odgovor {post} u temi {discussion}"
