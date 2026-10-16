@@ -1,0 +1,29 @@
+fof-ignore-users:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+    permissions:
+      can_not_be_ignored_label: "Drugi korisnici ih ne mogu zanemariti"
+
+
+  # Translations in this namespace are used by the forum interface.
+  forum:
+
+    profile_link: "Zanemareni korisnici"
+    profile_page:
+      no_ignored: "Ne zanemarujete nijednog korisnika."
+
+    # These strings are used in the User Controls menu.
+    user_controls:
+      ignore_button: "Zanemari"
+      ignore_confirmation: "Jeste li sigurni da želite zanemariti ovog korisnika?"
+      unignore_button: "Prestani zanemarivati"
+      unignore_confirmation: "Jeste li sigurni da želite prestati zanemarivati ovog korisnika?"
+
+    badge:
+      user_label: "Zanemareni korisnik"
+      discussion_label: "Tema zanemarenog korisnika"

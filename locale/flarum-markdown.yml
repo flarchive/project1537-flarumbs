@@ -1,0 +1,14 @@
+flarum-markdown:
+  lib:
+    composer:
+      bold_tooltip: "Podebljani tekst"
+      code_tooltip: "Umetni kod"
+      header_tooltip: "Naslov"
+      image_tooltip: "Dodaj sliku"
+      italic_tooltip: "Tekst u kurzivu"
+      link_tooltip: "Dodaj link"
+      ordered_list_tooltip: "Lista s brojevima"
+      quote_tooltip: "Umetni citat"
+      spoiler_tooltip: "Umetni skriveni tekst (spoiler)"
+      strikethrough_tooltip: "Precrtani tekst"
+      unordered_list_tooltip: "Lista s tačkama"

@@ -1,0 +1,158 @@
+fof-byobu:
+  forum:
+    badges:
+      is_private:
+        tooltip: "Privatna tema"
+
+    buttons:
+      add_recipients: "Primaoci"
+      submit: "U redu"
+      edit_recipients: "Uredi primaoce"
+      send_pd: "Pošalji poruku korisniku {username}"
+      cancel: "Otkaži"
+      make_public: "Učini ovu temu javnom"
+      remove_from_discussion: "Napusti ovu privatnu temu"
+
+    composer_private_discussion:
+      submit_button: "Objavi privatnu temu"
+      title_placeholder: "Naslov privatne teme"
+
+    confirm:
+      make_public: "Jeste li sigurni da želite ukloniti primaoce i učiniti ovu temu vidljivom svima koji mogu vidjeti dodijeljenu oznaku?"
+
+    hero:
+      title: => fof-byobu.forum.nav.nav_item
+
+    labels:
+      recipients: "{count, plural, one {# primalac} few {# primaoca} other {# primalaca}}"
+
+    nav:
+      start_button: "Nova privatna tema"
+      nav_item: "Privatne teme"
+
+    input:
+      search_recipients: "Pretražite primaoce unosom prva tri znaka…"
+
+    search:
+      headings:
+        groups: "Grupe korisnika"
+
+    modal:
+      titles:
+        update_recipients: "Izmjena primalaca: {title}"
+        add_recipients: "Dodajte primaoce u svoju temu"
+
+      labels:
+        selected_users: "Odabrani korisnici"
+        search_field: "Pretraži korisnike"
+
+      help:
+        add_recipients: "Ova tema bit će vidljiva samo korisnicima koje ovdje odaberete. Potreban je najmanje jedan primalac osim vas."
+        update_recipients: "Ova tema bit će vidljiva samo korisnicima koje ovdje odaberete."
+        selected_users: "Kliknite na ime korisnika da ga uklonite."
+        click_user_to_remove_tooltip: "Kliknite za uklanjanje"
+
+    post:
+      recipients_modified:
+        added_and_removed: "{username} – dodani primaoci: {added}; uklonjeni primaoci: {removed}."
+        added: "{username} – dodani primaoci: {added}."
+        made_public: "{username} – uklonjeni su svi primaoci i tema je postala javna"
+        removed: "{username} – uklonjeni primaoci: {removed}."
+        removed_self: "{username} napušta privatnu temu."
+
+    user:
+      settings:
+        block_pd: "Ne primaj privatne teme"
+      byobu_link: "Privatne teme"
+      dropdown_label: "Privatne teme"
+
+    notifications:
+      pd_label: "Neko me uključi u novu privatnu temu"
+      pd_reply_label: "Neko objavi u privatnoj temi u kojoj sam primalac"
+      pd_reply_text: "{username} – nova objava u privatnoj temi u kojoj učestvujete"
+      pd_text: "{username} – nova privatna tema s vama"
+      pd_user_left_label: "Neki primalac napusti privatnu temu u kojoj učestvujem"
+      pd_user_left_text: "{username} napušta privatnu temu"
+      pd_added_text: "{username} vas dodaje u privatnu temu"
+      pd_added_label: "Neko me doda u postojeću privatnu temu"
+
+  admin:
+    permission:
+      create_private_discussions_with_users: "Pokretanje privatnih tema s korisnicima"
+      add_more_than_two_user_recipients: "Dodavanje više od dva korisnika kao primalaca privatne teme"
+      create_private_discussions_with_groups: "Pokretanje privatnih tema s grupama"
+      create_private_discussions_with_blocking_users: "Pokretanje privatnih tema s korisnicima koji ne primaju privatne teme"
+      edit_user_recipients: "Izmjena korisnika koji učestvuju u privatnim temama"
+      edit_group_recipients: "Izmjena grupa koje učestvuju u privatnim temama"
+      make_private_into_public: "Pretvaranje privatne teme u javnu"
+      view_private_discussions-when-flagged: "Pregled privatnih tema drugih korisnika kada su prijavljene"
+
+    settings:
+      badge-icon: "Ikona značke privatne teme"
+      enable-make-public-option: "Omogući opciju „Učini javnom“"
+      enable-make-public-option-help: "Korisnicima s dozvolom omogućava da uklone sve primaoce, dodijele novu oznaku i učine temu javno vidljivom, u skladu s postavkama vidljivosti odabrane oznake."
+      post-event-icon: "Ikona objava o promjeni primalaca"
+      delete_on_last_recipient_left: "Obriši privatnu temu kada je napusti posljednji korisnik"
+      delete_on_last_recipient_left_help: "Ako je uključeno, privatna tema se trajno briše iz baze podataka kada je napusti posljednji korisnik. U suprotnom se samo sakriva."
+      hide_from_all_discussions_page: "Sakrij privatne teme sa stranice „Sve teme“"
+      hide_from_all_discussions_page_help: "Privatne teme bit će dostupne samo sa stranice „Privatne teme“ i s profila korisnika."
+
+  email:
+    subject:
+      private_discussion_created: "[Privatna tema] {display_name} – nova privatna tema s Vama"
+      private_discussion_replied: "[Privatna tema] {display_name} – nova objava u privatnoj temi"
+      recipient_removed: "[Privatna tema] {display_name} napušta temu"
+      private_discussion_added: "[Privatna tema] {display_name} Vas dodaje u privatnu temu"
+
+    body:
+      private_discussion_created: |
+        {actor_display_name} – nova privatna tema u kojoj ste primalac: „{discussion_title}“.
+
+        Temu možete pogledati ovdje:
+        {discussion_url}
+
+        Da biste otvorili ovaj link, možda ćete se prvo morati prijaviti.
+
+      private_discussion_replied: |
+        {actor_display_name} – nova objava u privatnoj temi u kojoj ste primalac: „{discussion_title}“.
+
+        Objavu možete pogledati ovdje:
+        {post_url}
+
+        Da biste otvorili ovaj link, možda ćete se prvo morati prijaviti.
+
+      recipient_removed: |
+        {actor_display_name} napušta privatnu temu „{discussion_title}“ i više neće moći vidjeti njen sadržaj.
+
+        Temu možete pogledati ovdje:
+        {discussion_url}
+
+        Da biste otvorili ovaj link, možda ćete se prvo morati prijaviti.
+
+      private_discussion_added: |
+        {actor_display_name} Vas dodaje u postojeću privatnu temu: „{discussion_title}“.
+
+        Temu možete pogledati ovdje:
+        {discussion_url}
+
+        Da biste otvorili ovaj link, možda ćete se prvo morati prijaviti.
+
+      made_public: |
+        {actor_display_name} – uklonjeni su svi primaoci i tema je postala javna: „{discussion_title}“.
+
+        Temu možete pogledati ovdje:
+        {discussion_url}
+
+        Da biste otvorili ovaj link, možda ćete se prvo morati prijaviti.
+  lib:
+    gambits:
+      # Ključ "byobu" ostaje nepreveden: ekstenzija ga na stranici
+      # "Privatne teme" u profilu korisnika koristi doslovno, na engleskom.
+      byobu:
+        key: byobu
+        hint: "korisničko ili prikazano ime primaoca"
+      private:
+        key: privatno
+      allows-pd:
+        key: prima-privatne
+        hint: "da"

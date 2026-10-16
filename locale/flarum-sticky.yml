@@ -1,0 +1,62 @@
+flarum-sticky:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+    settings:
+      enable_display_excerpt: "Prikaži sažetak prve objave kada zakačena tema nije pročitana"
+      only_sticky_unread_discussions_label: "Na vrhu samo nepročitane zakačene teme"
+      only_sticky_unread_discussions_help: "Na stranici Sve teme nepročitane zakačene teme stoje na vrhu, a pročitane zakačene teme prate uobičajeni redoslijed."
+      pin_sticky_on_all_discussions_label: "Drži zakačene teme na vrhu stranice Sve teme"
+      pin_sticky_on_all_discussions_help: "Kada je uključeno (podrazumijevano), zakačene teme stoje na vrhu stranice Sve teme. Kada je isključeno, pojavljuju se na svom uobičajenom mjestu, prema posljednjoj aktivnosti. Na stranicama oznaka zakačene teme uvijek stoje na vrhu, bez obzira na ovu postavku."
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      sticky_discussions_label: "Zakačivanje tema"
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are displayed as tooltips for discussion badges.
+    badge:
+      sticky_tooltip: "Zakačeno"
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      sticky_button: "Zakači"
+      unsticky_button: "Otkači"
+
+    # These translations are displayed between posts in the post stream.
+    post_stream:
+      discussion_stickied_text: "{username} – tema je zakačena {time}."
+      discussion_unstickied_text: "{username} – tema je otkačena {time}."
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are used by the forum and admin interfaces.
+  lib:
+
+    # These translations are used by gambits. Gambit keys must be in snake_case, no spaces.
+    gambits:
+      discussions:
+        sticky:
+          key: zakaceno
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    sticky: "Zakačeno"
+
+# Labels for the audit log entries this extension produces, rendered by the (optional)
+# flarum/audit browser. Defined under the flarum-audit namespace so the audit frontend
+# resolves them, but shipped here so they travel with the extension that owns the actions.
+flarum-audit:
+  lib:
+    browser:
+      discussion:
+        stickied: "Zakačena tema {discussion}"
+        unstickied: "Otkačena tema {discussion}"
