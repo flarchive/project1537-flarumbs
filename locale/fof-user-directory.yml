@@ -1,0 +1,47 @@
+fof-user-directory:
+    forum:
+        header:
+            back_to_user_directory_tooltip: "Nazad na imenik korisnika"
+
+        hero:
+            title: => fof-user-directory.forum.page.nav
+
+        search:
+            users_heading: "Pretraži sve korisnike: „{query}“"
+            field:
+                placeholder: "Pretraži sve korisnike"
+            kinds:
+                group: "Grupa"
+                text: "Slobodan tekst"
+        page:
+            nav: "Imenik korisnika"
+            refresh_tooltip: => core.forum.index.refresh_tooltip
+            load_more_button: => core.ref.load_more
+            empty_text: "Nijedan korisnik ne odgovara pretrazi."
+            filter_button: "Filtriraj po grupama"
+            usercard:
+                discussion-count: "{count, plural, one {# tema} few {# teme} other {# tema}}"
+                post-count: "{count, plural, one {# objava} few {# objave} other {# objava}}"
+
+    admin:
+        permissions:
+            view_user_directory: "Pregled imenika korisnika"
+        settings:
+            link: "Dodaj link na početnu stranicu za korisnike koji mogu vidjeti imenik"
+            default-sort: "Podrazumijevani redoslijed"
+            use-small-cards: "Koristi male kartice korisnika"
+            disable-global-search-source: "Ne uključuj imenik korisnika u opću pretragu platforme"
+            link-group-mentions: "Spominjanja grupa u objavama povezuj s imenikom korisnika"
+
+    lib:
+        sort:
+            not_specified: "Podrazumijevano za Flarum"
+            default: "Podrazumijevano"
+            username_az: "Korisničko ime (A–Ž)"
+            username_za: "Korisničko ime (Ž–A)"
+            newest: "Najnoviji"
+            oldest: "Najstariji"
+            most_discussions: "Najviše tema"
+            least_discussions: "Najmanje tema"
+            seen_recent: "Nedavno aktivni"
+            seen_oldest: "Najduže neaktivni"

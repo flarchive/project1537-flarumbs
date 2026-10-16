@@ -1,0 +1,62 @@
+datlechin-link-preview:
+
+  admin:
+
+    sections:
+      appearance_label: "Izgled"
+      appearance_description: "Kako pregled izgleda i kuda vodi klik na njega."
+      behaviour_label: "Ponašanje"
+      behaviour_description: "Koji linkovi u objavi dobijaju pregled."
+      performance_label: "Performanse"
+      performance_description: "Kako se pregledi preuzimaju i koliko dugo se čuvaju."
+      filtering_label: "Filtriranje"
+      filtering_description: "Koje web stranice smiju dobiti pregled. Jedan unos po redu ili više unosa odvojenih zarezom. Domena obuhvata i svoje poddomene, a * zamjenjuje jedan dio naziva."
+
+    settings:
+      open_links_in_new_tab_label: "Otvaraj linkove u novoj kartici"
+      open_links_in_new_tab_help: "Samo linkove prema drugim web stranicama. Tema s ove platforme uvijek se otvara u istoj kartici."
+
+      google_favicon_fallback_label: "Koristi Google kao rezervni izvor ikona stranica"
+      google_favicon_fallback_help: "Koristi se kada web stranica nema vlastitu ikonu. Google time saznaje na koje stranice vaši članovi postavljaju linkove."
+
+      preview_internal_links_label: "Prikazuj pregled linkova prema ovoj platformi"
+      preview_internal_links_help: "Link prema temi, članu, oznaci ili početnoj stranici ove platforme postaje kartica sastavljena iz baze podataka. Ništa se ne preuzima izvana i niko ne vidi više od onoga što bi i sam mogao otvoriti."
+
+      skip_media_links_label: "Preskoči linkove prema medijskim datotekama"
+      skip_media_links_help: "Odnosi se na linkove koji završavaju slikom, audio ili video datotekom, jer ih Flarum već sam prikazuje."
+
+      max_previews_per_post_label: "Broj pregleda po objavi"
+      max_previews_per_post_help: "Linkovi preko ovog broja ostaju obični linkovi."
+
+      enable_batch_requests_label: "Preuzimaj preglede grupno"
+      enable_batch_requests_help: "Jedan zahtjev za cijelu stranicu umjesto posebnog zahtjeva za svaki link. Isključite ovu opciju samo ako grupne zahtjeve odbija nešto što stoji ispred platforme (npr. proxy ili firewall)."
+
+      cache_time_label: "Trajanje keš memorije (minute)"
+      cache_time_help: "Koliko dugo se pregled čuva prije nego što se web stranica ponovo pročita. Vrijednost 0 isključuje keširanje."
+
+      allowlist_label: "Dozvoljene web stranice"
+      allowlist_help: "Dok ova lista nije prazna, pregled dobijaju samo linkovi koji joj odgovaraju."
+      allowlist_placeholder: "docs.example.com, *.wikipedia.org"
+
+      blocklist_label: "Blokirane web stranice"
+      blocklist_help: "Nikad ne dobijaju pregled, čak ni kada ih lista dozvoljenih propušta."
+      blocklist_placeholder: "example.com, news.example.org/sponsored"
+
+  forum:
+
+    loading: "Učitavanje pregleda"
+
+    # The facts a card built from the database lists under its title. Only the
+    # counted ones need a string: the rest carry their own text or a date.
+    meta:
+      replies: "{count, plural, one {# odgovor} few {# odgovora} other {# odgovora}}"
+      posts: "{count, plural, one {# objava} few {# objave} other {# objava}}"
+      discussions: "{count, plural, one {# tema} few {# teme} other {# tema}}"
+
+    # Shown only when something on the forum is counting clicks. Both the number
+    # and the decision that it is worth showing come from that extension.
+    clicks: "{count, plural, one {# klik} few {# klika} other {# klikova}}"
+
+    settings:
+      hide_link_previews_label: "Sakrij preglede linkova"
+      hide_link_previews_help: "U svim objavama koje čitate prikazuje se obična adresa umjesto kartice pregleda."
