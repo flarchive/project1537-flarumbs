@@ -1,0 +1,5 @@
+fof-default-group:
+  admin:
+    settings:
+      label: "Podrazumijevana grupa"
+      info: "Odaberite grupu u koju se korisnik automatski dodaje nakon aktivacije korisničkog računa."
