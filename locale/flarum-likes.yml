@@ -1,0 +1,56 @@
+flarum-likes:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      like_posts_label: "Označavanje objava sa „Sviđa mi se“"
+
+    settings:
+      like_own_posts_help: "Kada je uključeno, korisnici koji imaju dozvolu mogu i vlastite objave označiti sa „Sviđa mi se“. Da to spriječite, isključite ovu postavku."
+      like_own_posts_label: "Korisnici mogu i vlastite objave označiti sa „Sviđa mi se“"
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the Notifications dropdown, a.k.a. "the bell".
+    notifications:
+      others_text: => core.ref.some_others
+      post_liked_text: "Vaša objava se sviđa: {username}"  # Can be pluralized to agree with the number of users!
+
+    # These translations are displayed beneath individual posts.
+    post:
+      like_link: "Sviđa mi se"
+      liked_by_self_text: "Ovo se sviđa: {users}."  # Can be pluralized to agree with the number of users!
+      liked_by_text: "{count, plural, one {Ovo se sviđa: {users}} other {Ovo se sviđa: {users}}}."
+      others_link: => core.ref.some_others
+      unlike_link: "Povuci sviđanje"
+      you_text: => core.ref.you
+
+    # These translations are used by the Users Who Like This modal dialog.
+    post_likes:
+      title: "Kome se ovo sviđa"
+      load_more_button: => core.ref.load_more
+
+    # These translations are used in the Settings page.
+    settings:
+      notify_post_liked_label: "Nekome se sviđa neka od mojih objava"
+
+    # These translations are used in the User profile page.
+    user:
+      likes_link: "Sviđanja"
+
+  # Translations in this namespace are used by the forum and admin interfaces.
+  lib:
+
+    # These translations are used by gambits. Gambit keys must be in snake_case, no spaces.
+    gambits:
+      posts:
+        likedBy:
+          key: svidjanje
+          hint: "ID ili korisničko ime korisnika"
