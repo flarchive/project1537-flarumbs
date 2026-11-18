@@ -1,0 +1,26 @@
+michaelbelgium-ai-autoreply:
+  admin:
+    settings:
+      platform_label: "Platforma"
+      platform_help: "Odaberite AI platformu koja će se koristiti."
+      api_key_label: "API ključ"
+      api_key_help: "API ključ preuzmite na stranici <a>{platform}</a>."
+      model_label: "Model"
+      model_help: "Saznajte više o <a>modelima platforme {platform}</a> (podrazumijevano: <code>{model}</code>)."
+      max_tokens_label: "Najveći broj tokena"
+      max_tokens_help: "<a>Šta su tokeni i kako se broje?</a>"
+      temperature_label: "Temperatura"
+      temperature_help: "Određuje nasumičnost odgovora. Raspon je obično od 0 do 2, ali neke platforme koriste drugačije raspone."
+      user_prompt_label: "Korisnički račun asistenta"
+      user_prompt_help: "Unesite ID korisnika u čije ime će se objavljivati AI odgovori."
+      system_prompt_label: "Sistemske upute (system prompt)"
+      system_prompt_help: "Dajte asistentu kontekst i upute, npr. odredite njegov cilj ili ulogu."
+      system_prompt_placeholder: "Ti si koristan asistent na edukativnoj platformi."
+      user_prompt_badge_label: "Značka korisnika asistenta"
+      user_prompt_badge_help: "Tekst koji se prikazuje ispod imena korisnika asistenta."
+      enable_on_discussion_started_label: "Odgovaraj samo na početku teme"
+      enable_on_discussion_started_help: "Kada je uključeno, AI odgovara samo na prvu objavu teme. Kada je isključeno, tema postaje razgovor između autora teme i asistenta: asistent odgovara na svaku objavu autora teme."
+      enabled_tags_label: "Oznake"
+      enabled_tags_help: "Odaberite oznake u čijim će temama asistent odgovarati."
+    permissions:
+      use_chatgpt_assistant_label: "Korištenje AI asistenta"
