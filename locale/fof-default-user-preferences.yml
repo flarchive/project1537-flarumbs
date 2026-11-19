@@ -1,0 +1,15 @@
+fof-default-user-preferences:
+  admin:
+    settings:
+      discloseOnline: "Prikaz statusa na mreži"
+      discloseOnline-help: "Kada je uključeno, novi korisnici podrazumijevano dozvoljavaju drugima da vide kada su na mreži. Administratori i drugi korisnici s odgovarajućom dozvolom vide status na mreži bez obzira na ovu postavku."
+      indexProfile: "Indeksiranje profila"
+      indexProfile-help: "Kada je uključeno, novi korisnici podrazumijevano dozvoljavaju pretraživačima da indeksiraju stranicu njihovog profila, osim ako to ne sprečavaju druge postavke platforme ili ekstenzija."
+      followAfterReply: "Praćenje tema nakon odgovora"
+      followAfterReply-help: "Kada je uključeno, novi korisnici automatski prate teme u kojima odgovore ili komentiraju."
+      postMentioned: "E-mail kada neko odgovori na objavu"
+      postMentioned-help: "Kada je uključeno, novi korisnici automatski primaju obavještenje e-mailom kada neko odgovori na neku od njihovih objava."
+      userMentioned: "E-mail kada neko spomene korisnika"
+      userMentioned-help: "Kada je uključeno, novi korisnici automatski primaju obavještenje e-mailom kada ih neko spomene (@spominjanje)."
+      groupMentioned: "E-mail kada neko spomene grupu"
+      groupMentioned-help: "Kada je uključeno, novi korisnici automatski primaju obavještenje e-mailom kada neko spomene grupu kojoj pripadaju."
